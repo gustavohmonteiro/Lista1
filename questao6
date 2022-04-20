@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+    
+    
+*(pulo + 2);//Referencia o Terceiro elemento do Vetor
+*(pulo + 4);//Referencia o Quinto elemento do Vetor
+pulo + 4;
+pulo + 2;
+
+
+
+return 0;
+
+}
