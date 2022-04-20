@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int main(){
+
+    char arrayChar[4];
+    int arrayInt[4];
+    float arrayFloat[4];
+    double arrayDouble[4];
+
+    for(int i=0;i<4;i++){
+        printf("%d ",(arrayChar+i));
+    }
+            
+            //Saida char: 6422284 6422285 6422286 6422287 
+            
+    printf("\n");
+
+    for(int i=0;i<4;i++){
+        printf("%d ",(arrayInt+i));
+    }
+            
+            //Saida int: 6422268 6422272 6422276 6422280
+            
+    printf("\n");
+
+    for(int i=0;i<4;i++){
+        printf("%d ",(arrayFloat+i));
+
+    }
+    
+            //Saida float: 6422252 6422256 6422260 6422264
+
+    printf("\n");
+
+    for(int i=0;i<4;i++){
+        printf("%d ",(arrayDouble+i));
+    }
+            //Saida double: 6422216 6422224 6422232 6422240
+        
+   //Nos endereços do tipo int são acrescentados 4 Bytes a cada elemento e não 2 bytes como na questão anterior.
+        
+            
+return 0;
+
+}
