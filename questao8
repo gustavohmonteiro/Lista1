@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(){
+
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%d ",*(vet+i));
+  }
+       /* Cria um array com 3 elementos e 
+        percorre, dentro de um laço, imprimindo os valores
+        dos elementos do array*/
+
+  
+  
+  
+  int vet[] = {4,9,13};
+  int i;
+  for(i=0;i<3;i++){
+  printf("%X ",vet+i);
+  }
+
+       /* Cria um array com 3 elementos e 
+        percorre, dentro de um laço, imprimindo os valores
+        dos elementos do array em hexadecimal*/        
+        
+        
+        
+  
+return 0;
+
+}
