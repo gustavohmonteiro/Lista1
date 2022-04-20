@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int i=5, j=10, *p, *q;
+
+p = i; //p receberá o valor de i
+q = &j; //q receberá o valor de j
+p = &*&i; //p receberá o valor de i
+i = (*&)j;// Atribuição Ilegal
+i = *&j; // i receberá o valor de j
+i = *&*&j;//acontece duas desreferenciação, assim i receberá o valor de j
+q = *p;//q receberá o valor de p
+i = (*p)++ + *q;// Atribuição Ilegal
+
+    return 0;
+}
