@@ -1,0 +1,19 @@
+/*O libGC (Garbage Collector) que implementa um coletor de lixo em C, é usada para substituir o malloc. O libGC faz alocação de memória, sem 
+desalocar a memória que não é mais útil.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <gc.h>
+#include <assert.h>
+
+int  main () {
+        GC_INIT (); // Inicializar um LibGC
+        int * p = ( int *) GC_MALLOC ( 1000 * sizeof ( int )); // A memória é alocada por meio da função GC_MALLOC, sem a necessidade de utilizar gratuitamente.
+        int * q = ( int *) GC_MALLOC ( 1000 * sizeof ( int ));
+        * p = 50 ;
+        * q = 25 ;
+        int soma = * p + * q;
+        printf ( " A soma e % d " , soma);
+        return  0 ;
+}
