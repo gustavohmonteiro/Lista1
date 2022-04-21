@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+
+float aloha[10], coisas[10][5], *pf, value = 2.2;
+int i=3;
+
+aloha[2] = value; //Válido, recebe 2.2
+scanf("%f", &aloha);//Válido, o conteúdo vai para aloha[0]
+aloha = "value";//Inválido,aloha é um ponteiro 
+printf("%f", aloha);//Válido,retorna[0]
+coisas[4][4] = aloha[3];//Válido
+coisas[5] = aloha;//Inválido, não se pode utilizar essa atribuição por ser uma matriz
+pf = value; //Inválido,pf é um ponteiro.
+pf = aloha;//Válido,aloha é um vetor e repassa seu endereço nessa atribuição
+
+return 0;
+
+}
